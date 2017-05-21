@@ -60,7 +60,6 @@ public class RateBLL {
 	
 	public static double getPayment(double r, double n, double p, double f, boolean t)
 	{	
-		double r = this r;
 		if (r != 0){
 			(p*(1 + r)^n + y(1 + r*t)((1+r)^n-1)/r + f) = 0;
 		}
