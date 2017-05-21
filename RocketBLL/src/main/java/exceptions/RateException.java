@@ -3,10 +3,21 @@ package exceptions;
 import rocketDomain.RateDomainModel;
 
 public class RateException extends Exception {
+	
+	private RateDomainModel rate_domain_model;
 
-	public RateException(RateDomainModel rate_domain_model1) {
-		// TODO Auto-generated constructor stub
+	public RateDomainModel getRate_domain_model() {
+		return rate_domain_model;
 	}
+
+	public void setRate_domain_model(RateDomainModel rate_domain_model) {
+		
+		this.rate_domain_model = rate_domain_model;
+	}	
+	public RateException(RateDomainModel rate_domain_model){
+		this.rate_domain_model = rate_domain_model;
+	}
+	
 
 	//	TODO - RocketBLL RateException - RateDomainModel should be an attribute of RateException
 	//	* Add RateRomainModel as an attribute
