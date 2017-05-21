@@ -47,7 +47,7 @@ public class RateBLL {
 		//	Example... how to use Lambda functions:
 		//			https://github.com/CISC181/Lambda
 		
-		return dInterestRate;
+		//return dInterestRate;
 		
 		
 	}
@@ -60,10 +60,11 @@ public class RateBLL {
 	
 	public static double getPayment(double r, double n, double p, double f, boolean t)
 	{	
+		
 		if (r != 0){
 			(p*(1 + r)^n + y(1 + r*t)((1+r)^n-1)/r + f) = 0;
 		}
-		else
+		else{
 			(n*y + p + f) = 0;  
 			
 		}
