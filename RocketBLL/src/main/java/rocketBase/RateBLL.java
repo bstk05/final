@@ -40,12 +40,6 @@ public class RateBLL {
 		
 		
 		
-
-		//TODO: Filter the ArrayList...  look for the correct rate for the given credit score.
-		//	Easiest way is to apply a filter using a Lambda function.
-		//
-		//	Example... how to use Lambda functions:
-		//			https://github.com/CISC181/Lambda
 		
 		//return dInterestRate;
 		
