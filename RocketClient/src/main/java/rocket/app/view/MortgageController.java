@@ -42,19 +42,19 @@ public class MortgageController {
 	
 	public void HandleLoanRequestDetails(LoanRequest lRequest)
 	{
-		double Payment_one = lRequest.getdIncome() * 0.28;
+		double Payment1 = lRequest.getdIncome() * 0.28;
 		
-		double Payment_two = lRequest.getdIncome()* 0.36 - lRequest.getdExpenses();
+		double Payment2 = lRequest.getdIncome()* 0.36 - lRequest.getdExpenses();
 		
 		double Payment_replace;
 		
-		if (Payment_one < Payment_two) {
+		if (Payment1 < Payment2) {
 			
-			Payment_replace = Payment_one;
+			Payment_replace = Payment1;
 				
 		}
 		else {
-			Payment_replace = Payment_two;
+			Payment_replace = Payment2;
 		}
 		
 		if (Payment_replace < lRequest.getdPayment()){
